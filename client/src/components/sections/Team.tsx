@@ -28,6 +28,12 @@ export function Team() {
       id: "IU02-0124-0151",
       role: "Community Manager",
       image: member4
+    },
+    {
+      name: "Madiha",
+      id: "28715",
+      role: "Community Manager",
+      image: member2 // Reusing member2 image for now
     }
   ];
 
@@ -39,9 +45,13 @@ export function Team() {
           <p className="text-muted-foreground">Meet the team dedicated to your daily dose of nature.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Layout Tip: I changed 'grid' to 'flex-wrap' here. 
+           With 5 people, a strict 4-column grid leaves the 5th person lonely on the left.
+           Flexbox centers the last person automatically, which looks much better.
+        */}
+        <div className="flex flex-wrap justify-center gap-8">
           {team.map((member, i) => (
-            <div key={i} className="group text-center">
+            <div key={i} className="group text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-2rem)] max-w-[250px]">
               <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-sage-100 shadow-md group-hover:border-secondary transition-colors duration-300">
                 <img 
                   src={member.image} 

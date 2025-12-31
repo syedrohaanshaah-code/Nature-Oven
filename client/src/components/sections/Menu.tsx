@@ -12,28 +12,28 @@ export function Menu() {
       name: "Rose Latte",
       desc: "A floral embrace in a cup.",
       image: roseLatte,
-      price: "$5.50",
+      price: "1400PKR",
       tag: "Signature"
     },
     {
       name: "Cardamom Honey Coffee",
       desc: "Warm, spicy, and sweet.",
       image: cardamomCoffee,
-      price: "$4.75",
+      price: "1100 PKR",
       tag: "Popular"
     },
     {
       name: "Butterfly Pea Tea",
       desc: "Colors shift from blue to purple.",
       image: butterflyTea,
-      price: "$4.00",
+      price: "1100 PKR",
       tag: "Iced"
     },
     {
       name: "Date Shake",
       desc: "Nature’s energy booster.",
       image: dateShake,
-      price: "$6.00",
+      price: "1600 PKR",
       tag: "Healthy"
     }
   ];
